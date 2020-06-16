@@ -22,7 +22,7 @@ class Ex2 {
         fun run() {
             println((1 + 2.236) / 2)
             println(1.0 + 2.0 + 3.0 + 4.0)
-            println(4.1 > +4) // 编译期true
+            println(4.1 > +4)
             println((1 + 2).toString() + "3") // kotlin: <code>1 + 2 + "3"</code> is error
         }
     }
