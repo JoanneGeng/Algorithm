@@ -2,7 +2,6 @@ package sort;
 
 /**
  * 归并排序
- * 可以看看fork-join框架实现
  *
  * @author JoanneGeng
  * @date 2020/6/18
