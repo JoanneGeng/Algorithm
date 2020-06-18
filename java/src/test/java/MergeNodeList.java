@@ -30,10 +30,10 @@ public class MergeNodeList {
 
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
-        ListNode soldier = new ListNode(0);
+        ListNode soldier = new ListNode(0); // 哨兵
 
 
-        ListNode p = soldier;
+        ListNode p = soldier; // 游标
 
         while (l1 != null && l2 != null) {
 
