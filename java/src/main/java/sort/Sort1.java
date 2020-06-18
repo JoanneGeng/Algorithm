@@ -10,7 +10,9 @@ public class Sort1 {
 
     /**
      * 冒泡排序
-     *
+     * <p>原地排序
+     * <p>稳定
+     * <p>最好O(N),最坏O(N<sup>2</sup>),平均O(N<sup>2</sup>)
      * @param a 数组
      * @param n 数组大小
      */
@@ -42,6 +44,9 @@ public class Sort1 {
 
     /**
      * 插入排序
+     * <p>原地排序
+     * <p>稳定
+     * <p>最好O(N),最坏O(N<sup>2</sup>),平均O(N<sup>2</sup>)
      *
      * @param a
      * @param n
@@ -74,6 +79,9 @@ public class Sort1 {
 
     /**
      * 选择排序
+     * <p>原地
+     * <p>不稳定
+     * <p>最好O(N<sup>2</sup>),最坏O(N<sup>2</sup>),平均O(N<sup>2</sup>)
      *
      * @param a
      * @param n
@@ -87,7 +95,7 @@ public class Sort1 {
 
             for (int j = i + 1; j < n - i - 1; ++j) {
                 if (a[j] < a[minIndex]) {
-                    minIndex = j;// 找到最小inedx
+                    minIndex = j;// 找到最小index
                 }
 
             }
@@ -105,7 +113,10 @@ public class Sort1 {
 
         Sort1.bubbleSort(a, a.length);
 
-        System.out.println(a);
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+
 
 
     }

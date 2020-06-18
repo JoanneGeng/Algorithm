@@ -2,7 +2,10 @@ package sort;
 
 /**
  * 快排
- *
+ * <p>稳定
+ * <p>最好O(nlogn)；
+ * <p>极端情况[即原数组已经是有序的]会退化到O(N<sup>2</sup>)，大部分情况还是O(nlogn)
+ * <p>原地排序
  * @author JoanneGeng
  * @date 2020/6/18
  **/

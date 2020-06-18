@@ -2,6 +2,9 @@ package sort;
 
 /**
  * 归并排序
+ * <p>稳定
+ * <p>最好最坏平均O(nlogn)
+ * <p>非原地排序,空间复杂度O(N)
  *
  * @author JoanneGeng
  * @date 2020/6/18
