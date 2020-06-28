@@ -1,3 +1,5 @@
+package leetcode;
+
 /**
  * leetcode [21]合并两个有序链表
  * 1-2-4 1-3-4
@@ -6,7 +8,7 @@
  * @author JoanneGeng
  * @date 2020/6/18
  **/
-public class MergeNodeList {
+public class No21_MergeNodeList {
 
     public static class ListNode {
 
