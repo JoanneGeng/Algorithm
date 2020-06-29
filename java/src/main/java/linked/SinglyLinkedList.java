@@ -188,44 +188,146 @@ public class SinglyLinkedList {
         System.out.println();
 
     }
-//
-//    public boolean TFResult(Node left, Node right){
-//
-//    }
-//
 
-//    // 回文
-//    public boolean palindrome(){
-//
-//
-//    }
-//
-//    //带头结点的链表翻转
-//    public Node inverseLinkList_head(Node p){
-//
-//    }
-//
-//    //无头结点的链表翻转
-//    public Node inverseLinkList(Node p){
-//
-//    }
-//
-//    public static Node createNode(int value) {
-//
-//    }
+    public boolean TFResult(Node left, Node right) {
 
+        Node l = left;
+        Node r = right;
 
-}
+        boolean flag = true;
 
-class Node {
+        while (l != null && r != null) {
+            if (l.data == r.data) {
+                l = l.next;
+                r = r.next;
+                continue;
+            } else {
+                flag = false;
+                break;
+            }
+        }
 
-    int data;
+        return flag;
 
-    Node next;
-
-    public Node(int data, Node next) {
-        this.data = data;
-        this.next = next;
     }
+
+
+    // 回文
+    public boolean palindrome() {
+
+        if (head == null) {
+            return false;
+        }
+
+        Node p = head;
+
+        Node q = head;
+
+        if (p.next == null) {
+            System.out.println("只有一个元素");
+            return true;
+        }
+
+        while (q.next.next != null) {
+            p = p.next;
+            q = q.next.next;
+
+        }
+
+        System.out.println("中间节点" + p.data);
+        System.out.println("开始执行奇数节点的回文判断");
+        Node leftLink = null;
+        Node rightLink = null;
+        if (q.next == null) {
+            //　p 一定为整个链表的中点，且节点数目为奇数
+            rightLink = p.next;
+            leftLink = inverseLinkList(p).next;
+            System.out.println("左边第一个节点" + leftLink.data);
+            System.out.println("右边第一个节点" + rightLink.data);
+
+        } else {
+            //p q　均为中点
+            rightLink = p.next;
+            leftLink = inverseLinkList(p);
+        }
+
+        return TFResult(leftLink, rightLink);
+    }
+
+    //带头结点的链表翻转
+    public Node inverseLinkList_head(Node p) {
+
+        //　Head　为新建的一个头结点
+        Node Head = new Node(9999, null);
+        // p　为原来整个链表的头结点,现在Head指向　整个链表
+        Head.next = p;
+
+        /*
+        带头结点的链表翻转等价于
+        从第二个元素开始重新头插法建立链表
+        */
+        Node Cur = p.next;
+        p.next = null;
+        Node next = null;
+
+        while (Cur != null) {
+            next = Cur.next;
+            Cur.next = Head.next;
+            Head.next = Cur;
+            System.out.println("first " + Head.data);
+
+            Cur = next;
+        }
+
+        //　返回左半部分的中点之前的那个节点
+        //　从此处开始同步像两边比较
+        return Head;
+    }
+
+    //无头结点的链表翻转
+    public Node inverseLinkList(Node p) {
+
+        Node pre = null;
+
+        Node r = head;
+
+        System.out.println("z---" + r.data);
+
+        Node next = null;
+
+        while (r != p) {
+            next = r.next;
+
+            r.next = pre;
+            pre = r;
+            r = next;
+        }
+
+        r.next = pre;
+
+        //　返回左半部分的中点之前的那个节点
+        //　从此处开始同步像两边比较
+        return r;
+
+    }
+
+    public static Node createNode(int value) {
+        return new Node(value, null);
+    }
+
+    public static class Node {
+        private int data;
+        private Node next;
+
+        public Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
+
+        public int getData() {
+            return data;
+        }
+    }
+
 
 }
