@@ -10,7 +10,7 @@
         - [leetCode](#leetCode)
         - [剑指offer](#剑指offer)
 
-## java
+## [java](#java)
 
 ### main
 
