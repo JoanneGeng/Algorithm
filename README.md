@@ -6,6 +6,7 @@
         - [链表](#linked)
         - [排序](#sort)
         - [二分查找](#bsearch)
+        - [跳表](#skiplist)
     - [test](#test)
         - [leetCode](#leetCode)
         - [剑指offer](#剑指offer)
@@ -40,6 +41,12 @@
 - [x] 查找最后一个值等于给定值的元素
 - [x] 查找第一个大于等于给定值的元素
 - [x] 查找最后一个小于等于给定值的元素
+
+#### [5.](#skiplist) skiplist 跳表
+- [] 查找
+- [] 删除
+- [] 插入
+
 
 
 ### [test](#test)
