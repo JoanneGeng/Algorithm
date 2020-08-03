@@ -1,4 +1,4 @@
-package queue;
+package base.queue;
 
 /**
  * 链式队列

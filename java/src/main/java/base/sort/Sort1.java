@@ -1,4 +1,4 @@
-package sort;
+package base.sort;
 
 /**
  * 冒泡排序，插入排序，选择排序

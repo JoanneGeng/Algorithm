@@ -1,4 +1,4 @@
-package bsearch;
+package base.bsearch;
 
 /**
  * 查找任意元素

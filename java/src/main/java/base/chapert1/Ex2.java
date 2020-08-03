@@ -1,4 +1,4 @@
-package chapert1;
+package base.chapert1;
 
 /**
  * @author JoanneGeng

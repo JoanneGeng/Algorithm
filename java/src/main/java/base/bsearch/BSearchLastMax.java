@@ -1,4 +1,4 @@
-package bsearch;
+package base.bsearch;
 
 /**
  * 查找最后一个小于等于给定值的元素

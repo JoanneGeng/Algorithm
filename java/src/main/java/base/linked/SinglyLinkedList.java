@@ -1,4 +1,4 @@
-package linked;
+package base.linked;
 
 /**
  * 单链表
