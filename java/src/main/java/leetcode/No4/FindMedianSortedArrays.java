@@ -156,8 +156,8 @@ public class FindMedianSortedArrays {
     }
 
     public static void main(String[] args) {
-        int[] nums1 = {1, 2, 2};
-        int[] nums2 = {2, 4, 7, 9, 10};
+        int[] nums1 = {1, 6};
+        int[] nums2 = {1, 2, 5, 7, 8, 9};
 
 
         System.out.println(findMedianSortedArrays1(nums1, nums2));
