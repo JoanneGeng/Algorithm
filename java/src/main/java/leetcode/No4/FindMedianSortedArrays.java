@@ -24,6 +24,8 @@ package leetcode.No4;
 //
 // Related Topics 数组 二分查找 分治算法
 
+import java.util.Arrays;
+
 /**
  * @author JoanneGeng
  * @date 2020/8/3
@@ -98,6 +100,7 @@ public class FindMedianSortedArrays {
         int[] newnums1 = new int[nums1.length + 1];
         int[] newnums2 = new int[nums2.length + 1];
 
+        //Arrays.copyOf(nums1, nums1.length + 1); 自己写转换 貌似快一点
         for (int i = 0; i < nums1.length; i++) {
             newnums1[i] = nums1[i];
         }
@@ -156,8 +159,11 @@ public class FindMedianSortedArrays {
         int[] nums1 = {1, 2, 2};
         int[] nums2 = {2, 4, 7, 9, 10};
 
+
         System.out.println(findMedianSortedArrays1(nums1, nums2));
         System.out.println(findMedianSortedArrays2(nums1, nums2));
+
+
     }
 
 
