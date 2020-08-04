@@ -1,6 +1,10 @@
-mod find_median_sorted_arrays;
+mod leetcode;
+
+use leetcode::No4::{Solution::solution_struct};
+
 
 fn main() {
+
 
 
 }
