@@ -1,5 +1,7 @@
 package leetcode.No21;
 
+import leetcode.base.ListNode;
+
 /**
  * leetcode [21]合并两个有序链表
  * 1-2-4 1-3-4
@@ -10,24 +12,7 @@ package leetcode.No21;
  **/
 public class MergeNodeList {
 
-    public static class ListNode {
 
-        int val;
-        ListNode next;
-
-        ListNode() {
-
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
 
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
