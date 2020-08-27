@@ -58,6 +58,10 @@ public class AddTwoNumbers {
 
         }
 
+        if (carry == 1) {
+            l3 = new ListNode(1, l3);
+        }
+
 
         return l3;
     }
@@ -111,18 +115,18 @@ public class AddTwoNumbers {
 
         }
 
-
-        if (l3.val == 0) {
-            l3 = l3.next;
+        if (carry > 0) {
+            cur.next = new ListNode(1);
         }
 
-        return l3;
+
+        return l3.next;
     }
 
     public static void main(String[] args) {
 
-        ListNode l1 = new ListNode(3, new ListNode(4, new ListNode(2)));
-        ListNode l2 = new ListNode(4, new ListNode(6, new ListNode(5)));
+        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(4)));
+        ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(7)));
 
 
         ListNode sum = addTwoNumbers(l1, l2);
