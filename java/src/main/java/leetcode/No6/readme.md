@@ -1,4 +1,10 @@
 # leetcode No6 Z 字形变换
+
+- [content](#content)
+- [Solution1 使用数组实现，顺序读取](#solution1-使用数组实现顺序读取)
+- [Solution2 转换为一个数学题](#solution2-转换为一个数学题)
+
+## content
 <p>将一个给定字符串根据给定的行数，以从上往下、从左到右进行&nbsp;Z 字形排列。</p>
 
 <p>比如输入字符串为 <code>&quot;LEETCODEISHIRING&quot;</code>&nbsp;行数为 3 时，排列如下：</p>
@@ -33,7 +39,7 @@ T     S     G</pre>
 <div><div>Related Topics</div><div><li>字符串</li></div></div>
 
 
-## Solution1
+## Solution1 使用数组实现，顺序读取
 行数为numRows行，设置一个长度为numRows的数组
 以4行为例子`ArrayList<StringBuilder> arrayList = new ArrayList<>(numRows);`
 ```java
