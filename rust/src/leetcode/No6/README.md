@@ -34,7 +34,7 @@ T     S     G</pre>
 
 
 ## Solution
-les
+
 竖向4，斜线4-2
 val lastColumn = (lens%4)
 val all = (lens/4)
