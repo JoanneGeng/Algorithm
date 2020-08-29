@@ -1,4 +1,4 @@
-package base.skiplist;
+package base.cha5_skiplist;
 
 /**
  *

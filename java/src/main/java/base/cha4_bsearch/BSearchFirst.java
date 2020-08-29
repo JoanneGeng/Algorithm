@@ -1,4 +1,4 @@
-package base.bsearch;
+package base.cha4_bsearch;
 
 /**
  * 查找第一个值等于给定值的元素

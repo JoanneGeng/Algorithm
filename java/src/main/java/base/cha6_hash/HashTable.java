@@ -1,4 +1,4 @@
-package base.hash;
+package base.cha6_hash;
 
 /**
  * @author JoanneGeng

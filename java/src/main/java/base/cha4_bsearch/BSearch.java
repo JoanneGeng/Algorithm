@@ -1,4 +1,4 @@
-package base.bsearch;
+package base.cha4_bsearch;
 
 /**
  * 查找任意元素

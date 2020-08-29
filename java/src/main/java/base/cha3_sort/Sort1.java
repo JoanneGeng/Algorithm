@@ -1,4 +1,4 @@
-package base.sort;
+package base.cha3_sort;
 
 /**
  * 冒泡排序，插入排序，选择排序

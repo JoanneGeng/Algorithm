@@ -1,4 +1,4 @@
-package base.sort;
+package base.cha3_sort;
 
 /**
  * 快排

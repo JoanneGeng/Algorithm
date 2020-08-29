@@ -1,4 +1,4 @@
-package base.linked;
+package base.cha2_linked;
 
 /**
  * 单链表

@@ -1,4 +1,4 @@
-package base.queue;
+package base.cha1_queue;
 
 /**
  * 顺序队列
